@@ -18,24 +18,24 @@ Input variables for the dataset are:
 8. Age
 9. Class, Onset of diabetes
 
-Data is imported from the file 'dataset.csv'
+Data is imported from the file `dataset.csv`
 
 
 Dependencies include:
 ----
-1. 'numpy'
-2. 'keras'
-3. 'tensorflow' or 'theano' as backend
+1. `numpy`
+2. `keras`
+3. `tensorflow` or `theano` as backend
 
 Architecture of the Network
 ---
-We use a 'Sequential' model from keras. We're going to use a fully connected network with three layers. 
+We use a `Sequential` model from keras. We're going to use a fully connected network with three layers. 
 
-We use the rectifier ('relu') activation function on the first two layers and the 'sigmoid' actiivation function in the output layer. 
+We use the rectifier (`relu`) activation function on the first two layers and the `sigmoid` actiivation function in the output layer. 
 
 There are 8 inputs to the network, the first hidden layer has 12 neurons and the second hidden layer has 8 neurons. The output layer has 1 neuron to predict the class. 
 
-Loss function is 'binary_crossentropy' and the 'adam' optimizer is used. Number of epochs is 150 with a batch size of 10. 
+Loss function is `binary_crossentropy` and the `adam` optimizer is used. Number of epochs is 150 with a batch size of 10. 
 ![](Images/architecture.png)
 
 Evaluation 
